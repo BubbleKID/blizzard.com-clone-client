@@ -15,7 +15,7 @@ export default function Gallery() {
       <section>
         <h1>Games</h1>
         {cards.map(card => (
-            <Card background={card.background} name={card.name}></Card>
+            <Card key={card.name} background={card.background} name={card.name}></Card>
           ))
         }
       </section>
