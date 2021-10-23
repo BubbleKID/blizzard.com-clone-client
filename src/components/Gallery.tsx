@@ -5,13 +5,17 @@ import overWatchCover from'../images/game-card_overwatch_enUS.jpeg';
 import wowCover from '../images/game-card_wow_enUS.jpeg';
 
 export default function Gallery() {
-    const cards: string[] = [diablo2Cover, overWatch2Cover, overWatchCover, wowCover];
+    const cards = [{ name: "Diablo2", background: diablo2Cover},
+      { name: "Overwatch2", background:overWatch2Cover },  
+      { name: "Overwatch", background:overWatchCover },
+      { name: "World of Warcraft", background:wowCover }
+    ];
      
     return (
       <section>
         <h1>Games</h1>
         {cards.map(card => (
-            <Card background={card}></Card>
+            <Card background={card.background} name={card.name}></Card>
           ))
         }
       </section>

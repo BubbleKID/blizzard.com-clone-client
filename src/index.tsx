@@ -7,7 +7,6 @@ class MyComponent extends React.Component {
     return (
       <div>
         <Gallery/>
-        Hello Worldaaa 
       </div>
     );
   }
