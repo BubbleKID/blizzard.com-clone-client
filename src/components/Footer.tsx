@@ -14,7 +14,6 @@ const Link = (props: LinkProps) => {
     );
 };
 
-
 export default function Footer() {
     const links = [
         { name: 'Careers', url: '#'},
