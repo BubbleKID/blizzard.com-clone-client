@@ -12,7 +12,7 @@ class MyComponent extends React.Component {
     return (
       <div>
         <Welcome/>
-        Hello World 
+        Hello Worldaaa 
       </div>
     );
   }

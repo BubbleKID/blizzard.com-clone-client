@@ -8,7 +8,13 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
-  devServer: { contentBase: path.join(__dirname, "src") },
+  devServer: { 
+    static: {
+      directory: path.join(__dirname, 'build'),
+    },
+    compress: true,
+    port: 9000,
+  },
   module: {
     rules: [
       {
