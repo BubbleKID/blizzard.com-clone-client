@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
+import Home from './containers/Home';
 
 class MyComponent extends React.Component {
   render() {
     return (
       <div>
-        <Gallery/>
-        <Footer/>
+        <Home/>
       </div>
     );
   }
