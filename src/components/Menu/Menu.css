@@ -1,0 +1,39 @@
+.menu-container {
+    background-color: #0b0d12;
+}
+
+.menu {
+    height: 60px;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu-items {
+    font-size: 20px;
+    
+}
+
+.menu-items a {
+    margin-right: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    
+}
+
+.menu-items a span {
+   
+}
+
+.profile {
+    
+   
+}
+
+.profile a {
+    font-size: 17px;
+    text-transform: capitalize;
+    margin-right: 30px;
+}
