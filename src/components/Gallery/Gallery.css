@@ -1,20 +1,37 @@
 .gallery-container {
     background-position: top center;
     background-repeat: no-repeat;
+    display: flex;
+    /* position: relative;
+    max-width: 1600px;
+    margin: 0 auto; */
 }
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
-    max-width: 1170px;
-}
+    max-width: 1180px;
+}  
 
 .headdingContainer {
+    margin: 0 12px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 12px;
+    max-width:1180px; 
+}
+
+.gallery-wrapper {
+    margin: 0 auto;
+}
+
+.heading {
+    color: #fff;
+    font-size: 2.75rem;
+    font-weight: 400;
 }
 
 .headdingContainer a {

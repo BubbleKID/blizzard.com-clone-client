@@ -11,8 +11,7 @@ export default function Card(props: Props) {
         <img
           src={props.background}
           alt={props.name}
-          width="240"
-          height="320"
+        
         />
       </a>
     );
