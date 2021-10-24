@@ -1,6 +1,13 @@
-.gallery {
+.gallery-container {
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+.gallery {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1170px;
 }
 
 .headdingContainer {
@@ -8,9 +15,7 @@
     justify-content: space-between;
     align-items: baseline;
     margin: 0 12px;
-
 }
-
 
 .headdingContainer a {
     text-decoration: none;

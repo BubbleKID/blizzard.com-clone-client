@@ -1,4 +1,4 @@
-import Card from './../Card';
+import Card from '../Card/Card';
 import './Gallery.css';
 import diablo2Cover from '../../images/fenway-game-card.jpeg';
 import overWatch2Cover from'../../images/game-card_overwatch2_enUS.jpeg';
@@ -14,15 +14,17 @@ export default function Gallery() {
     ];
      
     return (
-      <section className='gallery' style={{backgroundImage: `url(${background})`}}>
+      <div className="gallery-container" style={{backgroundImage: `url(${background})`}}>
         <div className='headdingContainer'>
           <h2 style={{color: '#fff', width: '100%'}}>Games</h2>
           <a><span>Shop All Games</span></a>
         </div>
-        {cards.map(card => (
-            <Card key={card.name} background={card.background} name={card.name}></Card>
-          ))
-        }
-      </section>
+        <div className='gallery'>
+          {cards.map(card => (
+              <Card key={card.name} background={card.background} name={card.name}></Card>
+            ))
+          }
+        </div>
+      </div>
     );
 }
