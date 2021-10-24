@@ -1,0 +1,17 @@
+.gallery {
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.headdingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 12px;
+
+}
+
+
+.headdingContainer a {
+    text-decoration: none;
+}
