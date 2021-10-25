@@ -33,8 +33,12 @@ module.exports = {
         use: ["style-loader", "css-loader", "css-modules-typescript-loader"],
       },
       {
-        test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
+        test: /\.(jpg|jpeg|png|gif|mp3)$/,
         use: ["file-loader"],
+      },
+      {
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'url-loader'],
       },
     ],
   },
