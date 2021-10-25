@@ -1,6 +1,5 @@
 import './Menu.css';
 import  { ReactComponent as MenuLogo } from '../../images/Blizzard_Entertainment-2.svg';
-// import MenuLogo from '../../images/Blizzard_Entertainment-2.svg';
 
 export default function Menu() {
     return (
