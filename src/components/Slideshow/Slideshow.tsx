@@ -51,7 +51,6 @@ export default function Slideshow(props: Props) {
                 } else {
                   clearInterval(interval);
                 }
-               
             }, 1000);
             return () => {
                 setSeconds(3);
@@ -68,15 +67,17 @@ export default function Slideshow(props: Props) {
                 className='slide-container'
                 onMouseEnter={() => {setSlideControlButtonOpacity(1); setRunning(false) }}
                 onMouseLeave={() => {setSlideControlButtonOpacity(0); setRunning(true) }}
-                style={{ backgroundImage: `url(${props.slides[currentSlideIndex] .backgroundImage})`, backgroundColor: props.slides[currentSlideIndex].backgroundColor}}
             >
-                <div className='slide-content' >                
-                    <img className='slide-icon' width={props.slides[currentSlideIndex] .iconWidth} src={props.slides[currentSlideIndex] .icon}/>
-                    <span className='slide-title'>{props.slides[currentSlideIndex] .title}</span>
-                    <button className='slide-btn' type='button'>{props.slides[currentSlideIndex] .btnTest}</button>
+                <div className='slide-background'  style={{ backgroundImage: `url(${props.slides[currentSlideIndex] .backgroundImage})`, backgroundColor: props.slides[currentSlideIndex].backgroundColor}}>
+                    <div className="gradient-container"></div>
                 </div>
-                <button className="slide-control-btn prev" style={{opacity: slideControlButtonOpacity}} onClick={() => onClickSlideControlBtn('prev')}><PreBtn/></button>
-                <button className="slide-control-btn next" style={{opacity: slideControlButtonOpacity}} onClick={() =>  onClickSlideControlBtn('next')}><NexBtn/></button>
+                    <div className='slide-content' >                
+                        <img className='slide-icon' width={props.slides[currentSlideIndex] .iconWidth} src={props.slides[currentSlideIndex] .icon}/>
+                        <span className='slide-title'>{props.slides[currentSlideIndex] .title}</span>
+                        <button className='slide-btn' type='button'>{props.slides[currentSlideIndex] .btnTest}</button>
+                    </div>
+                    <button className="slide-control-btn prev" style={{opacity: slideControlButtonOpacity}} onClick={() => onClickSlideControlBtn('prev')}><PreBtn/></button>
+                    <button className="slide-control-btn next" style={{opacity: slideControlButtonOpacity}} onClick={() =>  onClickSlideControlBtn('next')}><NexBtn/></button>
             </div>
             <div className='slider'>
                 { 
