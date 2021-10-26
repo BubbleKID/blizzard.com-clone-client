@@ -1,4 +1,6 @@
 .slide-container {
+    display: flex;
+    align-items: center;
     bottom: 0;
     height: 514px;
     background-color: rgb(30, 3, 8);
@@ -71,4 +73,26 @@
 .active {
     background: #0086ca !important;
     transform: scaleY(1.75);
+}
+
+.slide-control-btn {
+    cursor: pointer;
+    border: 1px solid #263945;
+    background-color: rgba(0,0,0,.5);
+    height: 80px;
+    width: 40px;
+    fill:  #00aeff;
+    position: absolute;
+}
+
+.prev {
+    left: 50%;
+    right: auto;
+    transform: translateX(-800px);
+}
+
+.next {
+    left: auto;
+    right: 50%;
+    transform: translateX(800px);
 }
