@@ -31,3 +31,17 @@ a:hover {
 .footer-container {
     text-align: center;
 }
+
+.navbar-icon {
+    height: 1em;
+    width: 1.5em;
+}
+
+.navbar-icon path {
+    fill: #00aeff;
+}
+
+.navbar-app {
+    cursor: pointer;
+    color: #00aeff;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import LanguageSelector from './../LanguageSelector';
 import './Footer.css';
+import { ReactComponent as BNetIcon } from '../../images/Blizzard Entertainment-16.svg';
 
 interface LinkProps {
     name: string;
@@ -36,7 +37,7 @@ export default function Footer() {
     ];
 
     return (
-        <div className="footer-container">
+        <div className="footer-container"  style={{margin: '100px 0'}}>
             <div className="languague"></div>
             <div className="logo"></div>
             <div>
@@ -44,9 +45,11 @@ export default function Footer() {
                     <Link key={link.name} name={link.name} url={link.url} fontSize={17}></Link>
                 ))}
             </div>
-            <p style={{fontSize: '16px'}}>All games, one app:Battle.net Desktop App</p>
-            <p style={{fontSize: '13px'}}>©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.</p>
-            <p style={{fontSize: '13px'}}>All <a href="#" style={{fontWeight: 'bold'}}>trademarks</a> referenced herein are the properties of their respective owners.</p>
+            <div style={{fontSize: '16px', margin: '40px 0'}}>
+                <p>All games, one app: <BNetIcon className="navbar-icon"/><a className="navbar-app">Battle.net Desktop App</a></p>
+            </div>
+            <p style={{fontSize: '13px', margin: '0'}}>©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.</p>
+            <p style={{fontSize: '13px', margin: '0'}}>All <a href="#" style={{fontWeight: 'bold'}}>trademarks</a> referenced herein are the properties of their respective owners.</p>
             <div>
                 {smallLinks.map(link => (
                     <Link key={link.name} name={link.name} url={link.url} fontSize={13}></Link>
