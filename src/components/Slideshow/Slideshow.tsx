@@ -31,20 +31,20 @@ export default function Slideshow(props: Props) {
         let newIndex;
 
         if(type === 'prev') {
-            startNewAnimation(slideRef, ['slide-shift-left', 'slide-shift-right'], 'slide-shift-right');
-            startNewAnimation(btnRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-right-fade-in');
-            startNewAnimation(logoRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-right-fade-in');
-            startNewAnimation(titleRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-right-fade-in');
+            startNewAnimation(slideRef, 'slide-shift-right');
+            startNewAnimation(btnRef, 'shift-right-fade-in');
+            startNewAnimation(logoRef, 'shift-right-fade-in');
+            startNewAnimation(titleRef, 'shift-right-fade-in');
             if(currentSlideIndex === 0) {
                 newIndex = props.slides.length - 1;
             } else {
                 newIndex = currentSlideIndex - 1;
             }
         } else {
-            startNewAnimation(slideRef, ['slide-shift-left', 'slide-shift-right'], 'slide-shift-left');
-            startNewAnimation(btnRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-left-fade-in');
-            startNewAnimation(logoRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-left-fade-in');
-            startNewAnimation(titleRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-left-fade-in');
+            startNewAnimation(slideRef, 'slide-shift-left');
+            startNewAnimation(btnRef, 'shift-left-fade-in');
+            startNewAnimation(logoRef, 'shift-left-fade-in');
+            startNewAnimation(titleRef, 'shift-left-fade-in');
             if(currentSlideIndex === props.slides.length - 1) {
                 newIndex = 0;
             } else {
@@ -54,9 +54,11 @@ export default function Slideshow(props: Props) {
         setCurrentSlideIndex(newIndex);
     }
 
-    const startNewAnimation = (ref: any, oldClasses: string[], newClass: string) => {
-        oldClasses.forEach(oldClass => {
-            ref.current?.classList.remove(oldClass);
+    const startNewAnimation = (ref: any, newClass: string) => {
+        ref.current?.classList.forEach((className: string) => {
+            if(className.includes('shift')) {
+                ref.current?.classList.remove(className);
+            }
         })
         ref.current?.offsetWidth;
         ref.current?.classList.add(newClass);
