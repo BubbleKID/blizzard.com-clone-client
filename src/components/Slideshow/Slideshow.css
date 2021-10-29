@@ -67,11 +67,7 @@
     text-align: center;
     cursor: pointer;
     outline-offset: 2px;
-    animation-name: slideLeftFadeIn;
     animation-delay: 900ms;
-    animation-duration: 500ms;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
 }
 
 .slide-btn:hover {
@@ -121,6 +117,13 @@
     left: auto;
     right: 50%;
     transform: translateX(800px);
+}
+
+.shift-left-fade-in {
+    animation-name: slideLeftFadeIn;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
 }
 
 @keyframes slideLeftFadeIn {
