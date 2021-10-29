@@ -22,24 +22,29 @@ export default function Slideshow(props: Props) {
     const [slideControlButtonOpacity, setSlideControlButtonOpacity] = useState<number>(0);
     const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
     const [shiftClassName, setShiftClassName] = useState<string>('shift-left-fade-in');
-    const ref = useRef<HTMLButtonElement>(null);
+    const btnRef = useRef<HTMLButtonElement>(null);
+    const slideRef = useRef<HTMLDivElement>(null);
+    const logoRef = useRef<HTMLImageElement>(null);
+    const titleRef = useRef<HTMLSpanElement>(null);
 
     const onClickSlideControlBtn = (type: string): void => {
         let newIndex;
-      
-        ref.current?.classList.remove('shift-left-fade-in');
-        void ref.current?.offsetWidth;
+
         if(type === 'prev') {
-            setShiftClassName('shift-left-fade-in');
-            void ref.current?.offsetWidth;
+            startNewAnimation(slideRef, ['slide-shift-left', 'slide-shift-right'], 'slide-shift-right');
+            startNewAnimation(btnRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-right-fade-in');
+            startNewAnimation(logoRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-right-fade-in');
+            startNewAnimation(titleRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-right-fade-in');
             if(currentSlideIndex === 0) {
                 newIndex = props.slides.length - 1;
             } else {
                 newIndex = currentSlideIndex - 1;
             }
         } else {
-            setShiftClassName('shift-left-fade-in');
-            void ref.current?.offsetWidth;
+            startNewAnimation(slideRef, ['slide-shift-left', 'slide-shift-right'], 'slide-shift-left');
+            startNewAnimation(btnRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-left-fade-in');
+            startNewAnimation(logoRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-left-fade-in');
+            startNewAnimation(titleRef, ['shift-left-fade-in', 'shift-right-fade-in'], 'shift-left-fade-in');
             if(currentSlideIndex === props.slides.length - 1) {
                 newIndex = 0;
             } else {
@@ -47,7 +52,14 @@ export default function Slideshow(props: Props) {
             }
         }
         setCurrentSlideIndex(newIndex);
-        
+    }
+
+    const startNewAnimation = (ref: any, oldClasses: string[], newClass: string) => {
+        oldClasses.forEach(oldClass => {
+            ref.current?.classList.remove(oldClass);
+        })
+        ref.current?.offsetWidth;
+        ref.current?.classList.add(newClass);
     }
     const isPlay = false;
 
@@ -77,14 +89,15 @@ export default function Slideshow(props: Props) {
                 className='slide-container'
                 onMouseEnter={() => {setSlideControlButtonOpacity(1); setRunning(false) }}
                 onMouseLeave={() => {setSlideControlButtonOpacity(0); setRunning(true) }}
+                style={{backgroundColor: props.slides[currentSlideIndex].backgroundColor}}
             >
-                <div className='slide-background' style={{ backgroundImage: `url(${props.slides[currentSlideIndex] .backgroundImage})`, backgroundColor: props.slides[currentSlideIndex].backgroundColor}}>
+                <div ref={slideRef} className='slide-background slide-shift-left' style={{ backgroundImage: `url(${props.slides[currentSlideIndex].backgroundImage})`, backgroundColor: props.slides[currentSlideIndex].backgroundColor}}>
                     <div className="gradient-container"></div>
                 </div>
                     <div className='slide-content'>                
-                        <img className='slide-icon' width={props.slides[currentSlideIndex] .iconWidth} src={props.slides[currentSlideIndex] .icon}/>
-                        <span className='slide-title'>{props.slides[currentSlideIndex].title}</span>
-                        <button ref={ref} className={'slide-btn ' + shiftClassName} type='button'>{props.slides[currentSlideIndex].btnTest}</button>
+                        <img ref={logoRef} className='slide-icon shift-left-fade-in' width={props.slides[currentSlideIndex] .iconWidth} src={props.slides[currentSlideIndex].icon}/>
+                        <span ref={titleRef} className='slide-title shift-left-fade-in'>{props.slides[currentSlideIndex].title}</span>
+                        <button ref={btnRef} className='slide-btn shift-left-fade-in' type='button'>{props.slides[currentSlideIndex].btnTest}</button>
                     </div>
                     <button className="slide-control-btn prev" style={{opacity: slideControlButtonOpacity}} onClick={() => onClickSlideControlBtn('prev')}><PreBtn/></button>
                     <button className="slide-control-btn next" style={{opacity: slideControlButtonOpacity}} onClick={() => onClickSlideControlBtn('next')}><NexBtn/></button>

@@ -14,11 +14,7 @@
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center top;
-    animation-name: shiftSlideLeft;
-    animation-delay: 500ms;
     animation-duration: 5500ms;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
 }
 
 .slide-content {
@@ -37,21 +33,13 @@
     text-shadow: 4px 7px 17px rgb(0 0 0 / 80%);
     font-weight: 700;
     line-height: 1.2;
-    animation-name: slideLeftFadeIn;
     animation-delay: 700ms;
-    animation-duration: 500ms;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
 }
 
 .slide-icon {
     display: block;
     margin-bottom: 24px;
-    animation-name: slideLeftFadeIn;
     animation-delay: 500ms;
-    animation-duration: 500ms;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-out;
 }
 
 .slide-btn {
@@ -126,9 +114,41 @@
     animation-timing-function: ease-out;
 }
 
+.slide-shift-left {
+    animation-name: shiftSlideLeft;
+    animation-duration: 5500ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
+.shift-right-fade-in {
+    animation-name: slideRightFadeIn;
+    animation-duration: 500ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
+.slide-shift-right {
+    animation-name: shiftSlideRight;
+    animation-duration: 5500ms;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-out;
+}
+
 @keyframes slideLeftFadeIn {
     0% {
         transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRightFadeIn {
+    0% {
+        transform: translateX(-20px);
         opacity: 0;
     }
     100% {
@@ -144,6 +164,21 @@
     }
     9.0909% {
         transform: translateX(20px) rotate(0.01deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) rotate(0.01deg);
+        opacity: 1;
+    }
+}
+
+@keyframes shiftSlideRight {
+    0% {
+        transform: translateX(-120px) rotate(0.01deg);
+        opacity: 0;
+    }
+    9.0909% {
+        transform: translateX(-20px) rotate(0.01deg);
         opacity: 1;
     }
     100% {
