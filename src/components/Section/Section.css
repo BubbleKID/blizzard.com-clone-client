@@ -1,0 +1,30 @@
+.section-container {
+     
+}
+
+.section-content {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 56px;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-btn {
+    margin-top: 32px;
+    background-color: #006fb2;
+    border: solid 1px#00aeff;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline-offset: 2px;
+}

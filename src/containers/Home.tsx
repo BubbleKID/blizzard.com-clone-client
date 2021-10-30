@@ -2,7 +2,7 @@ import Gallery from '../components/Gallery/Gallery';
 import Footer from '../components/Footer/Footer';
 import Menu from '../components/Menu/Menu';
 import Slideshow from '../components/Slideshow/Slideshow';
-import Section from '../components/Section';
+import Section from '../components/Section/Section';
 import desktopBg from '../images/DesktopBG_Image.jpeg';
 import carrersBg from '../images/careers-1.jpeg';
 import './Home.css';
@@ -45,8 +45,20 @@ export default function Home() {
             <Menu/>
             <Slideshow slides={slides}/>
             <Gallery/>
-            <Section backgroundImage={desktopBg}/>
-            <Section backgroundImage={carrersBg}/>
+            <Section height='450px' backgroundImages={[desktopBg]}>
+                <p>Download Battle.net</p>
+                <p>Your games in one place</p>
+                <p>Connect with friends</p>
+                <p>Shop for digital games and goodies</p>
+                <button>Download for Windows</button>
+                <p>Learn More</p>
+                <p>Also available as a mobile app</p>
+            </Section>
+            <Section height='412px' backgroundImages={[carrersBg]}>
+                <p style={{fontSize: '2.75rem', fontWeight: 500, margin: 0, padding: 0}}>Create worlds</p>
+                <p style={{fontSize: '1.5rem', fontWeight: 400,  margin: 0, padding: 0}}>Learn more about Careers at Blizzard</p>
+                <button className="section-btn">Explore Careers</button>
+            </Section>
             <Footer/>
         </div>
     );

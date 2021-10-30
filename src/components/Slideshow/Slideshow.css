@@ -85,6 +85,16 @@
     transform: scaleY(1.75);
 }
 
+.play {
+    width: 100px;
+    height: 6px;
+    background-color: #00aeff !important;
+    animation: fillPagination;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    z-index: 30;
+}
+
 .slide-control-btn {
     cursor: pointer;
     border: 1px solid #263945;
@@ -186,3 +196,14 @@
         opacity: 1;
     }
 }
+
+@keyframes fillPagination {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+

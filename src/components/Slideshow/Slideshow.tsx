@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Slideshow.css';
 import  { ReactComponent as PreBtn } from '../../images/Blizzard Entertainment-10.svg';
 import  { ReactComponent as NexBtn } from '../../images/Blizzard Entertainment-11.svg';
+import Section from '../Section/Section';
 
 interface Props {
     slides: Slide[]
@@ -20,8 +21,7 @@ export default function Slideshow(props: Props) {
     const [running, setRunning] = useState(false);
     let [seconds, setSeconds] = useState<number>(3);
     const [slideControlButtonOpacity, setSlideControlButtonOpacity] = useState<number>(0);
-    const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
-    const [shiftClassName, setShiftClassName] = useState<string>('shift-left-fade-in');
+    let [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
     const btnRef = useRef<HTMLButtonElement>(null);
     const slideRef = useRef<HTMLDivElement>(null);
     const logoRef = useRef<HTMLImageElement>(null);
@@ -63,7 +63,7 @@ export default function Slideshow(props: Props) {
         ref.current?.offsetWidth;
         ref.current?.classList.add(newClass);
     }
-    const isPlay = false;
+    let isPlay = false;
 
     useEffect(
         () => {
@@ -73,12 +73,16 @@ export default function Slideshow(props: Props) {
                 if(seconds > 0) {
                     setSeconds(seconds -= 1);
                 } else {
+                  // setCurrentSlideIndex(currentSlideIndex += 1);
                   clearInterval(interval);
+                  setSeconds(3);
+                  isPlay = true
                 }
             }, 1000);
             return () => {
                 setSeconds(3);
                 clearInterval(interval);
+                isPlay = false
             }
           }
         },
@@ -109,8 +113,9 @@ export default function Slideshow(props: Props) {
                     props.slides.map((slide, index) => 
                         <div key={index}
                             onClick={() => setCurrentSlideIndex(index)}
-                            className={(index === currentSlideIndex) ? 'slider-item active':'slider-item'}
+                            className={index === currentSlideIndex ? 'slider-item active':'slider-item'}
                         >
+                            { index === currentSlideIndex && isPlay ? ( <div className='play'></div>) : null }
                         </div>
                     )
                 }
