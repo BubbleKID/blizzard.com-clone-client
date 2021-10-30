@@ -3,7 +3,7 @@ var express = require('express');
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.set('port', process.env.PORT || 9000);
 
 var server = app.listen(app.get('port'), function() {
