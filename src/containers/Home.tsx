@@ -16,6 +16,8 @@ import { ReactComponent as SectionIcon1 } from '../images/Blizzard Entertainment
 import { ReactComponent as SectionIcon2 } from '../images/Blizzard Entertainment-13.svg';
 import { ReactComponent as SectionIcon3 } from '../images/Blizzard Entertainment-14.svg';
 import { ReactComponent as SectionIcon4 } from '../images/Blizzard Entertainment-15.svg';
+import { ReactComponent as BNetIcon } from '../images/Blizzard Entertainment-16.svg';
+import appImage from '../images/enus.jpeg';
 
 const slides = [
     {
@@ -50,32 +52,46 @@ export default function Home() {
             <Slideshow slides={slides}/>
             <Gallery/>
             <Section height='450px' backgroundImages={[desktopBg]}>
-                <p style={{fontSize: '2.75rem', fontWeight: 500, margin: 0, padding: 0, color: '#fff'}}>Download Battle.net</p>
-                <div className="section-title-container">
-                    <SectionIcon1 className="section-icon"/>
-                    <p className="section-title">Your games in one place</p>
+                <div className="section-wrapper">
+                    <div className="section-content">
+                        <p style={{fontSize: '2.75rem', fontWeight: 500, margin: 0, padding: 0, color: '#fff'}}>Download Battle.net</p>
+                        <div className="section-title-container">
+                            <SectionIcon1 className="section-icon"/>
+                            <p className="section-title">Your games in one place</p>
+                        </div>
+                        <div className="section-title-container">
+                            <SectionIcon2 className="section-icon"/>
+                            <p className="section-title">Connect with friends</p>
+                        </div>
+                        <div className="section-title-container">
+                            <SectionIcon3 className="section-icon"/>
+                            <p className="section-title">Shop for digital games and goodies</p>
+                        </div>
+                        <div>
+                            <button className="section-btn section-title-container">
+                                <p style={{margin: 0, color: '#fff'}}>Download for Windows</p>
+                                <SectionIcon4 className="section-icon section-icon-inside-btn"/>
+                            </button>
+                            <button className="section-btn transparent-btn">Learn More</button>
+                        </div>
+                        <p>Also available as a <a href="#" className="mobile-link">mobile app</a></p>
+                    </div>
+                    <div className="section-icon-large-container">
+                        <BNetIcon className="section-icon-large" style={{fill: '#148eff'}}/>
+                    </div>
+                    <div className="section-image-container">
+                        <img src={appImage}></img>
+                    </div>
                 </div>
-                <div className="section-title-container">
-                    <SectionIcon2 className="section-icon"/>
-                    <p className="section-title">Connect with friends</p>
-                </div>
-                <div className="section-title-container">
-                    <SectionIcon3 className="section-icon"/>
-                    <p className="section-title">Shop for digital games and goodies</p>
-                </div>
-                <div>
-                    <button className="section-btn section-title-container">
-                        <p style={{margin: 0, color: '#fff'}}>Download for Windows</p>
-                        <SectionIcon4 className="section-icon section-icon-inside-btn"/>
-                    </button>
-                    <button className="section-btn transparent-btn">Learn More</button>
-                </div>
-                <p>Also available as a <a href="#" className="mobile-link">mobile app</a></p>
             </Section>
             <Section height='412px' backgroundImages={[carrersBg]}>
-                <p style={{fontSize: '2.75rem', fontWeight: 500, margin: 0, padding: 0, color: '#fff'}}>Create worlds</p>
-                <p style={{fontSize: '1.5rem', fontWeight: 400,  margin: 0, padding: 0}}>Learn more about Careers at Blizzard</p>
-                <button className="section-btn">Explore Careers</button>
+                <div className="section-wrapper">
+                    <div className="section-content">
+                        <p style={{fontSize: '2.75rem', fontWeight: 500, margin: 0, padding: 0, color: '#fff'}}>Create worlds</p>
+                        <p style={{fontSize: '1.5rem', fontWeight: 400,  margin: 0, padding: 0}}>Learn more about Careers at Blizzard</p>
+                        <button className="section-btn">Explore Careers</button>
+                    </div>
+                </div>
             </Section>
             <Footer/>
         </div>
