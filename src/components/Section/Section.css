@@ -15,7 +15,7 @@
 }
 
 .section-btn {
-    margin-top: 32px;
+    margin-top: 16px;
     background-color: #006fb2;
     border: solid 1px#00aeff;
     display: block;
@@ -27,4 +27,61 @@
     text-align: center;
     cursor: pointer;
     outline-offset: 2px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.transparent-btn {
+    color: #00aeff;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-icon {
+    display: inline-block;
+    margin-right: 12px;
+    align-items: center;
+    margin: 8px 0;
+    margin-right: 12px;
+    width: 21.6px;
+    height: 21.6px;
+}
+
+.section-icon path{
+   fill: #00aeff;
+}
+
+.section-icon-inside-btn {
+    width: 32.4px;
+    height: 32.4px;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.section-icon-inside-btn path{
+    fill: #fff;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 8px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.section-title-container {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.mobile-link {
+    line-height: 1.5;
+    color: #00aeff;
+    text-decoration: underline;
+    transition: color 200ms;
+    text-underline-position: under;
 }
