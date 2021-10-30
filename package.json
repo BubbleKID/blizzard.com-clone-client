@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack serve",
     "dev": "webpack serve",
     "test": "jest --collect-coverage"
   },
