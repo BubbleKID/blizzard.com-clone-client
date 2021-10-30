@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer changes the class when hovered 1`] = `
+<div
+  className="footer-container"
+  style={
+    Object {
+      "margin": "100px 0",
+    }
+  }
+>
+  <div
+    className="languague"
+  />
+  <div
+    className="logo"
+  />
+  <div>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Careers
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      About
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Support
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Contact Us
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Press
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      API
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Site Map
+    </a>
+  </div>
+  <div
+    style={
+      Object {
+        "fontSize": "16px",
+        "margin": "40px 0",
+      }
+    }
+  >
+    <p>
+      All games, one app: 
+      <ReactComponent
+        className="navbar-icon"
+      />
+      <a
+        className="navbar-app"
+      >
+        Battle.net Desktop App
+      </a>
+    </p>
+  </div>
+  <p
+    style={
+      Object {
+        "fontSize": "13px",
+        "margin": "0",
+      }
+    }
+  >
+    ©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.
+  </p>
+  <p
+    style={
+      Object {
+        "fontSize": "13px",
+        "margin": "0",
+      }
+    }
+  >
+    All 
+    <a
+      href="#"
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      trademarks
+    </a>
+     referenced herein are the properties of their respective owners.
+  </p>
+  <div>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Privacy
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Legal
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Terms
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Cookie Policy
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Cookie Setting
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Footer should be rendered 1`] = `
+<div
+  className="footer-container"
+  style={
+    Object {
+      "margin": "100px 0",
+    }
+  }
+>
+  <div
+    className="languague"
+  />
+  <div
+    className="logo"
+  />
+  <div>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Careers
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      About
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Support
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Contact Us
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Press
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      API
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 17,
+        }
+      }
+    >
+      Site Map
+    </a>
+  </div>
+  <div
+    style={
+      Object {
+        "fontSize": "16px",
+        "margin": "40px 0",
+      }
+    }
+  >
+    <p>
+      All games, one app: 
+      <ReactComponent
+        className="navbar-icon"
+      />
+      <a
+        className="navbar-app"
+      >
+        Battle.net Desktop App
+      </a>
+    </p>
+  </div>
+  <p
+    style={
+      Object {
+        "fontSize": "13px",
+        "margin": "0",
+      }
+    }
+  >
+    ©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.
+  </p>
+  <p
+    style={
+      Object {
+        "fontSize": "13px",
+        "margin": "0",
+      }
+    }
+  >
+    All 
+    <a
+      href="#"
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      trademarks
+    </a>
+     referenced herein are the properties of their respective owners.
+  </p>
+  <div>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Privacy
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Legal
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Terms
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Cookie Policy
+    </a>
+    <a
+      className="links"
+      href="#"
+      style={
+        Object {
+          "fontSize": 13,
+        }
+      }
+    >
+      Cookie Setting
+    </a>
+  </div>
+</div>
+`;
