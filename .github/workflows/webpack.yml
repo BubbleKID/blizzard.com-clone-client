@@ -26,4 +26,4 @@ jobs:
       run: |
         npm install
         npx webpack
-    - run: npm test-without-coverage
+    - run: npm run test
