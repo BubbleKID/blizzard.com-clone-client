@@ -5,6 +5,9 @@
     <img alt="GitHub license badge" src="https://img.shields.io/github/license/BubbleKID/blizzard.com-clone-client"></a>
 <a href="https://www.linkedin.com/in/xin-chen-mark" alt="Activity">
     <img alt="Linkedin badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white"></a>
+<a href="https://app.travis-ci.com/github/BubbleKID/blizzard.com-clone-client" alt="Activity">
+    <img alt="Buildi badge" src="https://app.travis-ci.com/BubbleKID/blizzard.com-clone-client.svg?branch=master"></a>
+
  
 <!-- PROJECT LOGO -->
 <br />
