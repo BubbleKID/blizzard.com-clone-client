@@ -22,7 +22,7 @@ Link : https://blizzard-clone.herokuapp.com
 ### Built With
 * [React.js](https://reactjs.org/)
 * [Typescript](https://www.typescriptlang.org/)
-* 
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Installation
