@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-[![MIT License][license-shield]][[license-url](https://github.com/BubbleKID/blizzard.com-clone-client/blob/master/LICENSE)]
+[![MIT License][license-shield]][https://github.com/BubbleKID/blizzard.com-clone-client/blob/master/LICENSE]]
 [![LinkedIn][linkedin-shield]][[linkedin-url](https://www.linkedin.com/in/xin-chen-mark/)]
 
 <!-- PROJECT LOGO -->
