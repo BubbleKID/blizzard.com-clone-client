@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "webpack serve",
     "test": "jest --collect-coverage --updateSnapshot",
-    "build": "webpack"
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; webpack"
   },
   "jest": {
     "moduleNameMapper": {
