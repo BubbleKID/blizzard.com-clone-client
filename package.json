@@ -10,6 +10,13 @@
     "build": "webpack"
   },
   "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.ts*"
+    ],
+    "coveragePathIgnorePatterns": [
+      ".d.ts",
+      ".snap"
+    ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy",
       "\\.(svg)$": "identity-obj-proxy"

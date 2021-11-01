@@ -6,7 +6,11 @@
 <a href="https://www.linkedin.com/in/xin-chen-mark" alt="Activity">
     <img alt="Linkedin badge" src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white"></a>
 <a href="https://app.travis-ci.com/github/BubbleKID/blizzard.com-clone-client" alt="Activity">
-    <img alt="Buildi badge" src="https://app.travis-ci.com/BubbleKID/blizzard.com-clone-client.svg?branch=master"></a>
+    <img alt="Buildi badge" src="https://app.travis-ci.com/BubbleKID/blizzard.com-clone-client.svg?branch=master"></a>    
+<a href="https://codecov.io/gh/BubbleKID/blizzard.com-clone-client">
+    <img src="https://codecov.io/gh/BubbleKID/blizzard.com-clone-client/branch/master/graph/badge.svg?token=60YDH3NGO6"/>
+</a>
+    
 
  
 <!-- PROJECT LOGO -->
