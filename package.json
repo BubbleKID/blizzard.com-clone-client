@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack serve",
-    "test": "jest --collect-coverage --updateSnapshot"
+    "test": "jest --collect-coverage --updateSnapshot",
+    "build": "webpack"
   },
   "jest": {
     "moduleNameMapper": {
