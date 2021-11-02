@@ -1,4 +1,5 @@
 import './Card.css';
+import React from 'react';
 
 interface Props {
     name: string,
@@ -8,11 +9,7 @@ interface Props {
 export default function Card(props: Props) {
     return (
       <a href="#" className="card">
-        <img
-          src={props.background}
-          alt={props.name}
-        
-        />
+        <img src={props.background} alt={props.name}/>
       </a>
     );
 }

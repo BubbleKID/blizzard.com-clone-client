@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should be rendered 1`] = `
+<a
+  className="card"
+  href="#"
+>
+  <img
+    alt="card"
+    src=""
+  />
+</a>
+`;

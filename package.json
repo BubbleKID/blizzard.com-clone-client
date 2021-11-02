@@ -11,15 +11,12 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.ts*"
-    ],
-    "coveragePathIgnorePatterns": [
-      ".d.ts",
-      ".snap"
+      "src/**/*.tsx"
     ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy",
-      "\\.(svg)$": "identity-obj-proxy"
+      "\\.(svg)$": "identity-obj-proxy",
+      "\\.(jpg|ico|jpeg|png)$": "<rootDir>/__mocks__/fileMock.js"
     }
   },
   "author": "",
