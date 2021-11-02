@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should be rendered 1`] = `
+<div
+  className="gallery-container"
+  style={
+    Object {
+      "backgroundImage": "url()",
+    }
+  }
+>
+  <div
+    className="gallery-wrapper"
+  >
+    <div
+      className="headdingContainer"
+    >
+      <h2
+        className="heading"
+      >
+        Games
+      </h2>
+      <a>
+        <span>
+          Shop All Games
+        </span>
+      </a>
+    </div>
+    <div
+      className="gallery"
+    >
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Diablo2"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Overwatch2"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Overwatch"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="World of Warcraft"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="HearthStone"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Heroes of The Storm"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Warcraft3"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Diablo4"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Diablo Immortal"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Diablo3"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Starcraft2"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Starcraft"
+          src=""
+        />
+      </a>
+      <a
+        className="card"
+        href="#"
+      >
+        <img
+          alt="Blizzard Arcade"
+          src=""
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;

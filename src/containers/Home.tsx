@@ -1,3 +1,4 @@
+import React from 'react';
 import Gallery from '../components/Gallery/Gallery';
 import Footer from '../components/Footer/Footer';
 import Menu from '../components/Menu/Menu';

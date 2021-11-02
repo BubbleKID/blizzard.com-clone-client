@@ -1,3 +1,4 @@
+import React from 'react';
 import './Menu.css';
 import  { ReactComponent as MenuLogo } from '../../images/Blizzard_Entertainment-2.svg';
 

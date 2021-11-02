@@ -1,0 +1,661 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should be rendered 1`] = `
+<div>
+  <div
+    className="menu-container"
+  >
+    <div
+      className="menu"
+    >
+      <div
+        className="menu-items"
+      >
+        <a
+          className="menu-logo"
+        >
+          <ReactComponent />
+        </a>
+        <div
+          className="menu-button"
+        >
+          <a>
+            <span>
+              Games
+            </span>
+          </a>
+          <a>
+            <span>
+              Shop
+            </span>
+          </a>
+          <a>
+            <span>
+              News
+            </span>
+          </a>
+          <a>
+            <span>
+              Esports
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        className="profile"
+      >
+        <a>
+          <span>
+            Support
+          </span>
+        </a>
+        <a>
+          <span>
+            My account
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="slide-container"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgb(30, 3, 8)",
+      }
+    }
+  >
+    <div
+      className="slide-background slide-shift-left"
+      style={
+        Object {
+          "backgroundColor": "rgb(30, 3, 8)",
+          "backgroundImage": "url()",
+        }
+      }
+    >
+      <div
+        className="gradient-container"
+      />
+    </div>
+    <div
+      className="slide-content"
+    >
+      <img
+        className="slide-icon shift-left-fade-in"
+        src=""
+        width={260}
+      />
+      <span
+        className="slide-title shift-left-fade-in"
+      >
+        Illidan's lieutenants
+Await
+      </span>
+      <button
+        className="slide-btn shift-left-fade-in"
+        type="button"
+      >
+        Play Today
+      </button>
+    </div>
+    <button
+      className="slide-control-btn prev"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <ReactComponent />
+    </button>
+    <button
+      className="slide-control-btn next"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <ReactComponent />
+    </button>
+  </div>
+  <div
+    className="slider"
+  >
+    <div
+      className="slider-item active"
+      onClick={[Function]}
+    />
+    <div
+      className="slider-item"
+      onClick={[Function]}
+    />
+    <div
+      className="slider-item"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="gallery-container"
+    style={
+      Object {
+        "backgroundImage": "url()",
+      }
+    }
+  >
+    <div
+      className="gallery-wrapper"
+    >
+      <div
+        className="headdingContainer"
+      >
+        <h2
+          className="heading"
+        >
+          Games
+        </h2>
+        <a>
+          <span>
+            Shop All Games
+          </span>
+        </a>
+      </div>
+      <div
+        className="gallery"
+      >
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Diablo2"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Overwatch2"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Overwatch"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="World of Warcraft"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="HearthStone"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Heroes of The Storm"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Warcraft3"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Diablo4"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Diablo Immortal"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Diablo3"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Starcraft2"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Starcraft"
+            src=""
+          />
+        </a>
+        <a
+          className="card"
+          href="#"
+        >
+          <img
+            alt="Blizzard Arcade"
+            src=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="section-container"
+    style={
+      Object {
+        "backgroundImage": "url()",
+        "height": "450px",
+      }
+    }
+  >
+    <div
+      className="section-wrapper"
+    >
+      <div
+        className="section-content"
+      >
+        <p
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": "2.75rem",
+              "fontWeight": 500,
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Download Battle.net
+        </p>
+        <div
+          className="section-title-container"
+        >
+          <ReactComponent
+            className="section-icon"
+          />
+          <p
+            className="section-title"
+          >
+            Your games in one place
+          </p>
+        </div>
+        <div
+          className="section-title-container"
+        >
+          <ReactComponent
+            className="section-icon"
+          />
+          <p
+            className="section-title"
+          >
+            Connect with friends
+          </p>
+        </div>
+        <div
+          className="section-title-container"
+        >
+          <ReactComponent
+            className="section-icon"
+          />
+          <p
+            className="section-title"
+          >
+            Shop for digital games and goodies
+          </p>
+        </div>
+        <div>
+          <button
+            className="section-btn section-title-container"
+          >
+            <p
+              style={
+                Object {
+                  "color": "#fff",
+                  "margin": 0,
+                }
+              }
+            >
+              Download for Windows
+            </p>
+            <ReactComponent
+              className="section-icon section-icon-inside-btn"
+            />
+          </button>
+          <button
+            className="section-btn transparent-btn"
+          >
+            Learn More
+          </button>
+        </div>
+        <p>
+          Also available as a 
+          <a
+            className="mobile-link"
+            href="#"
+          >
+            mobile app
+          </a>
+        </p>
+      </div>
+      <div
+        className="section-icon-large-container"
+      >
+        <ReactComponent
+          className="section-icon-large"
+          style={
+            Object {
+              "fill": "#148eff",
+            }
+          }
+        />
+      </div>
+      <div
+        className="section-image-container"
+      >
+        <img
+          src=""
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="section-container"
+    style={
+      Object {
+        "backgroundImage": "url()",
+        "height": "412px",
+      }
+    }
+  >
+    <div
+      className="section-wrapper"
+    >
+      <div
+        className="section-content"
+      >
+        <p
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": "2.75rem",
+              "fontWeight": 500,
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Create worlds
+        </p>
+        <p
+          style={
+            Object {
+              "fontSize": "1.5rem",
+              "fontWeight": 400,
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Learn more about Careers at Blizzard
+        </p>
+        <button
+          className="section-btn"
+        >
+          Explore Careers
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="footer-container"
+    style={
+      Object {
+        "margin": "100px 0",
+      }
+    }
+  >
+    <div
+      className="languague"
+    />
+    <div
+      className="logo"
+    />
+    <div>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        Careers
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        About
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        Support
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        Contact Us
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        Press
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        API
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 17,
+          }
+        }
+      >
+        Site Map
+      </a>
+    </div>
+    <div
+      style={
+        Object {
+          "fontSize": "16px",
+          "margin": "40px 0",
+        }
+      }
+    >
+      <p>
+        All games, one app: 
+        <ReactComponent
+          className="navbar-icon"
+        />
+        <a
+          className="navbar-app"
+        >
+          Battle.net Desktop App
+        </a>
+      </p>
+    </div>
+    <p
+      style={
+        Object {
+          "fontSize": "13px",
+          "margin": "0",
+        }
+      }
+    >
+      ©2021 BLIZZARD ENTERTAINMENT, INC. ALL RIGHTS RESERVED.
+    </p>
+    <p
+      style={
+        Object {
+          "fontSize": "13px",
+          "margin": "0",
+        }
+      }
+    >
+      All 
+      <a
+        href="#"
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        trademarks
+      </a>
+       referenced herein are the properties of their respective owners.
+    </p>
+    <div>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 13,
+          }
+        }
+      >
+        Privacy
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 13,
+          }
+        }
+      >
+        Legal
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 13,
+          }
+        }
+      >
+        Terms
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 13,
+          }
+        }
+      >
+        Cookie Policy
+      </a>
+      <a
+        className="links"
+        href="#"
+        style={
+          Object {
+            "fontSize": 13,
+          }
+        }
+      >
+        Cookie Setting
+      </a>
+    </div>
+  </div>
+</div>
+`;

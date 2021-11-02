@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from '../Card/Card';
 import './Gallery.css';
 import diablo2Cover from '../../images/fenway-game-card.jpeg';
