@@ -1,5 +1,5 @@
 import React from "react";
-import LanguageSelector from './../LanguageSelector';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 import './Footer.css';
 import { ReactComponent as BNetIcon } from '../../images/Blizzard Entertainment-16.svg';
 
