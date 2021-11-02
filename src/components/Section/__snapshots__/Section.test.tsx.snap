@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should be rendered 1`] = `
+exports[`Section should be rendered 1`] = `
 <div
   className="section-container"
   style={

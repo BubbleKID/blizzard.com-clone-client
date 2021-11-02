@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slideshow should be rendered 1`] = `
+Array [
+  <div
+    className="slide-container"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgb(30, 3, 8)",
+      }
+    }
+  >
+    <div
+      className="slide-background slide-shift-left"
+      style={
+        Object {
+          "backgroundColor": "rgb(30, 3, 8)",
+          "backgroundImage": "url()",
+        }
+      }
+    >
+      <div
+        className="gradient-container"
+      />
+    </div>
+    <div
+      className="slide-content"
+    >
+      <img
+        className="slide-icon shift-left-fade-in"
+        src=""
+        width={260}
+      />
+      <span
+        className="slide-title shift-left-fade-in"
+      >
+        Illidan's lieutenants
+Await
+      </span>
+      <button
+        className="slide-btn shift-left-fade-in"
+        type="button"
+      >
+        Play Today
+      </button>
+    </div>
+    <button
+      className="slide-control-btn prev"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <ReactComponent />
+    </button>
+    <button
+      className="slide-control-btn next"
+      onClick={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <ReactComponent />
+    </button>
+  </div>,
+  <div
+    className="slider"
+  >
+    <div
+      className="slider-item active"
+      onClick={[Function]}
+    />
+    <div
+      className="slider-item"
+      onClick={[Function]}
+    />
+  </div>,
+]
+`;

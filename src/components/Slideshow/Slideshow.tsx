@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Slideshow.css';
 import  { ReactComponent as PreBtn } from '../../images/Blizzard Entertainment-10.svg';
 import  { ReactComponent as NexBtn } from '../../images/Blizzard Entertainment-11.svg';
-import Section from '../Section/Section';
 
 interface Props {
     slides: Slide[]

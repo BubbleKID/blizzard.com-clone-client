@@ -45,7 +45,7 @@ const slides = [
         backgroundImage: backgroundImageOW,
         backgroundColor: 'rgb(35, 38, 51)'
     }
-]
+];
 export default function Home() {
     return(
         <div>
