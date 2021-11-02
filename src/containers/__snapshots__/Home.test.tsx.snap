@@ -14,7 +14,7 @@ exports[`Card should be rendered 1`] = `
         <a
           className="menu-logo"
         >
-          <ReactComponent />
+          <span />
         </a>
         <div
           className="menu-button"
@@ -110,7 +110,7 @@ Await
         }
       }
     >
-      <ReactComponent />
+      <span />
     </button>
     <button
       className="slide-control-btn next"
@@ -121,7 +121,7 @@ Await
         }
       }
     >
-      <ReactComponent />
+      <span />
     </button>
   </div>
   <div
@@ -319,7 +319,7 @@ Await
         <div
           className="section-title-container"
         >
-          <ReactComponent
+          <span
             className="section-icon"
           />
           <p
@@ -331,7 +331,7 @@ Await
         <div
           className="section-title-container"
         >
-          <ReactComponent
+          <span
             className="section-icon"
           />
           <p
@@ -343,7 +343,7 @@ Await
         <div
           className="section-title-container"
         >
-          <ReactComponent
+          <span
             className="section-icon"
           />
           <p
@@ -366,7 +366,7 @@ Await
             >
               Download for Windows
             </p>
-            <ReactComponent
+            <span
               className="section-icon section-icon-inside-btn"
             />
           </button>
@@ -389,7 +389,7 @@ Await
       <div
         className="section-icon-large-container"
       >
-        <ReactComponent
+        <span
           className="section-icon-large"
           style={
             Object {
@@ -558,7 +558,7 @@ Await
     >
       <p>
         All games, one app: 
-        <ReactComponent
+        <span
           className="navbar-icon"
         />
         <a

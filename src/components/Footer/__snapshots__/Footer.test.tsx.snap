@@ -104,7 +104,7 @@ exports[`Footer should be rendered 1`] = `
   >
     <p>
       All games, one app: 
-      <ReactComponent
+      <span
         className="navbar-icon"
       />
       <a

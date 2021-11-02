@@ -16,9 +16,13 @@
     ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy",
-      "\\.(svg)$": "identity-obj-proxy",
+      "\\.(svg)$": "<rootDir>/__mocks__/svgrMock.js",
       "\\.(jpg|ico|jpeg|png)$": "<rootDir>/__mocks__/fileMock.js"
-    }
+    },
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "./src/setupTests.js"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -39,15 +43,20 @@
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.15.0",
     "@svgr/webpack": "^5.5.0",
+    "@types/enzyme": "^3.10.10",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "@types/react-test-renderer": "^17.0.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.4.0",
     "css-modules-typescript-loader": "^4.0.1",
+    "enzyme": "^3.11.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.3.1",
+    "jsdom": "18.0.1",
+    "jsdom-global": "3.0.2",
     "path": "^0.12.7",
     "style-loader": "^3.3.0",
     "ts-loader": "^9.2.6",

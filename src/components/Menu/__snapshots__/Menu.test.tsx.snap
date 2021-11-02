@@ -13,7 +13,7 @@ exports[`Menu should be rendered 1`] = `
       <a
         className="menu-logo"
       >
-        <ReactComponent />
+        <span />
       </a>
       <div
         className="menu-button"

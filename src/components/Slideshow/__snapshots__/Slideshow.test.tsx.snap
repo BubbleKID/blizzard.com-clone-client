@@ -55,7 +55,7 @@ Await
         }
       }
     >
-      <ReactComponent />
+      <span />
     </button>
     <button
       className="slide-control-btn next"
@@ -66,7 +66,7 @@ Await
         }
       }
     >
-      <ReactComponent />
+      <span />
     </button>
   </div>,
   <div
@@ -74,6 +74,10 @@ Await
   >
     <div
       className="slider-item active"
+      onClick={[Function]}
+    />
+    <div
+      className="slider-item"
       onClick={[Function]}
     />
     <div
