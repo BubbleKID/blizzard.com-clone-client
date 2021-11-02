@@ -8,6 +8,7 @@ import owIcon from '../images/icons/OW_2021_HalloweenTerror_Logo-Only_enUS.png';
 import backgroundImageTbc from '../../images/wow-bcc-overlords-banner-desktop-2500x514.jpeg';
 import backgroundImageD2 from '../../images/D2R_2021_Blizzard.comDesktop_2500x514_MB01.png';
 import backgroundImageOW from '../images/OW_2021_HalloweenTerror_BlizzardHomepage-Desktop_2500x514_JP.jpeg';
+import renderer from 'react-test-renderer';
 
 const slides = [
     {
@@ -55,4 +56,3 @@ test('click next button', () => {
     let btnTest = wrapper.find('.slide-title').text();
     expect(btnTest).toEqual(slides[1].title);
 });
-

@@ -64,36 +64,36 @@ export default function Slideshow(props: Props) {
     }
     let isPlay = false;
 
-    useEffect(
-        () => {
-          if (running) {
-            const interval = setInterval(() => {
-                console.log(seconds)
-                if(seconds > 0) {
-                    setSeconds(seconds -= 1);
-                } else {
-                  // setCurrentSlideIndex(currentSlideIndex += 1);
-                  clearInterval(interval);
-                  setSeconds(3);
-                  isPlay = true
-                }
-            }, 1000);
-            return () => {
-                setSeconds(3);
-                clearInterval(interval);
-                isPlay = false
-            }
-          }
-        },
-        [running]
-    );
+    // useEffect(
+    //     () => {
+    //       if (running) {
+    //         const interval = setInterval(() => {
+    //             console.log(seconds)
+    //             if(seconds > 0) {
+    //                 setSeconds(seconds -= 1);
+    //             } else {
+    //               // setCurrentSlideIndex(currentSlideIndex += 1);
+    //               clearInterval(interval);
+    //               setSeconds(3);
+    //               isPlay = true
+    //             }
+    //         }, 1000);
+    //         return () => {
+    //             setSeconds(3);
+    //             clearInterval(interval);
+    //             isPlay = false
+    //         }
+    //       }
+    //     },
+    //     [running]
+    // );
     
     return (
         <React.Fragment>
             <div 
                 className='slide-container'
-                onMouseEnter={() => {setSlideControlButtonOpacity(1); setRunning(false) }}
-                onMouseLeave={() => {setSlideControlButtonOpacity(0); setRunning(true) }}
+                // onMouseEnter={() => {setSlideControlButtonOpacity(1); setRunning(false) }}
+                // onMouseLeave={() => {setSlideControlButtonOpacity(0); setRunning(true) }}
                 style={{backgroundColor: props.slides[currentSlideIndex].backgroundColor}}
             >
                 <div ref={slideRef} className='slide-background slide-shift-left' style={{ backgroundImage: `url(${props.slides[currentSlideIndex].backgroundImage})`, backgroundColor: props.slides[currentSlideIndex].backgroundColor}}>

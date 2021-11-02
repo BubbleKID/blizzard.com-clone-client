@@ -59,8 +59,6 @@ exports[`Card should be rendered 1`] = `
   </div>
   <div
     className="slide-container"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
     style={
       Object {
         "backgroundColor": "rgb(30, 3, 8)",
