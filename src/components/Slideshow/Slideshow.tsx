@@ -92,8 +92,8 @@ export default function Slideshow(props: Props) {
         <React.Fragment>
             <div 
                 className='slide-container'
-                // onMouseEnter={() => {setSlideControlButtonOpacity(1); setRunning(false) }}
-                // onMouseLeave={() => {setSlideControlButtonOpacity(0); setRunning(true) }}
+                    onMouseEnter={() => {setSlideControlButtonOpacity(1); setRunning(false) }}
+                    onMouseLeave={() => {setSlideControlButtonOpacity(0); setRunning(true) }}
                 style={{backgroundColor: props.slides[currentSlideIndex].backgroundColor}}
             >
                 <div ref={slideRef} className='slide-background slide-shift-left' style={{ backgroundImage: `url(${props.slides[currentSlideIndex].backgroundImage})`, backgroundColor: props.slides[currentSlideIndex].backgroundColor}}>
